@@ -1,5 +1,7 @@
 package com.alvin;
 
+import org.junit.Test;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -10,6 +12,7 @@ import java.util.List;
  */
 public class Iteration {
 
+    @Test
     public void before() {
         List features = Arrays.asList("Lambdas", "Default Method", "Stream API", "Date and Time API");
         for (Object feature : features) {
@@ -17,6 +20,7 @@ public class Iteration {
         }
     }
 
+    @Test
     public void now() {
         List features = Arrays.asList("Lambdas", "Default Method", "Stream API", "Date and Time API");
         features.forEach(n -> System.out.println(n));

@@ -1,5 +1,7 @@
 package com.alvin;
 
+import org.junit.Test;
+
 import java.util.List;
 import java.util.function.Predicate;
 
@@ -10,7 +12,8 @@ import java.util.function.Predicate;
  */
 public class PredicateDemo {
 
-    public  void filter(List names, Predicate condition) {
+    @Test
+    public void filter(List names, Predicate condition) {
         names.stream().filter((name) -> (condition.test(name))).forEach((name) -> {
             System.out.println(name + " ");
         });
